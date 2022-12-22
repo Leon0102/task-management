@@ -1,0 +1,11 @@
+<ng-content></ng-content>
+
+<div class="menu-container">
+  <dx-tree-view [items]="items" keyExpr="path" selectionMode="single" [focusStateEnabled]="false" expandEvent="click"
+    (onItemClick)="onItemClick($event)" width="100%">
+  </dx-tree-view>
+  <div class="menu-footer">
+
+    <app-user-panel [user]="user" [menuItems]="userMenuItems" menuMode="list"></app-user-panel>
+  </div>
+</div>

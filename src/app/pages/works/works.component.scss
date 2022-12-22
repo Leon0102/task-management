@@ -1,0 +1,152 @@
+#list-demo{
+    dx-button{
+        margin: 10px 10px;
+    }
+}
+
+#kanban {
+    white-space: nowrap;
+    margin: 0 10px;
+}
+
+.list {
+    border-radius: 8px;
+    margin: 5px;
+    background-color: #EEF1FF;
+    border: 1px solid #D9E0FF;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+}
+
+.list-title {
+    font-size: 16px;
+    padding: 10px;
+    padding-left: 30px;
+    margin-bottom: -10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.scrollable-list {
+    height: 520px;
+    width: 270px;
+}
+
+.sortable-cards {
+    min-height: 380px;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    box-sizing: border-box;
+    width: 230px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.card-subject {
+    padding-bottom: 10px;
+}
+
+.card-assignee {
+    opacity: 0.6;
+}
+
+.card-priority {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 5px;
+    width: 5px;
+    border-radius: 2px;
+    background: #86c285;
+}
+
+.priority-1 {
+    background: #adadad;
+}
+
+.priority-2 {
+    background: #86c285;
+}
+
+.priority-3 {
+    background: #edc578;
+}
+
+.priority-4 {
+    background: #ef7d59;
+}
+
+::ng-deep .dx-sortable {
+    display: block;
+}
+
+.btn-add-task {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+}
+
+// List Popup
+.list-popup{
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            input{
+                width: 100%;
+                font-size: 16px;
+                padding: 10px;
+                margin: 10px 0;
+                font-weight: 500;
+            }
+        }
+}
+.popup-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    .dx-button{
+        margin: 0 10px;
+        padding:0 10px;
+        width: 200px;
+    }
+}
+
+
+// Task popup
+.task-popup{
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            input{
+                width: 100%;
+                font-size: 16px;
+                padding: 10px;
+                margin: 10px 0;
+                font-weight: 500;
+            }
+            textarea{
+                width: 100%;
+                font-size: 16px;
+                padding: 10px;
+                margin: 10px 0;
+                font-weight: 500;
+            }
+            .dx-selectbox{
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+}
